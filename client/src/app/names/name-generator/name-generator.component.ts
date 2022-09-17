@@ -61,15 +61,15 @@ export class NameGeneratorComponent {
           while (!generated) {
             const generatedName = names[Math.floor(Math.random() * names.length)]
             console.log(generatedName);
-            const isNonBinary = this.nameParameters.get("gender")!.value === "Non-binary";
-            const isSameGender = generatedName.gender === this.nameParameters.get("gender")!.value;
+            const isNonBinary = this.nameParameters.get("gender")!.value! === "Non-binary";
+            const isSameGender = generatedName.gender === this.nameParameters.get("gender")!.value!;
             if (isNonBinary || isSameGender) {
               const newName: GreekName = {
                 name: generatedName.name,
                 meaning: generatedName.meaning,
-                gender: this.nameParameters.get("gender")!.value,
-                purpose: this.nameParameters.get("purpose")!.value,
-                lastname: this.nameParameters.get("lastName")!.value,
+                gender: this.nameParameters.get("gender")!.value!,
+                purpose: this.nameParameters.get("purpose")!.value!,
+                lastname: this.nameParameters.get("lastName")!.value!,
                 lastmeaning: chosenLastName.meaning
               }
               console.log(newName);

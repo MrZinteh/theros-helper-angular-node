@@ -17,13 +17,20 @@
   "dependencies": {
     "@angular/cli": "~13.2.5",
     "@angular/core": "^14.2.2",
+    "@angular/platform-browser": "^14.2.2",
+    "@angular/platform-browser-dynamic": "^14.2.2",
+    "@angular/platform-server": "^14.2.2",
+    "@angular/router": "^14.2.2",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
     "node-postgres": "^0.6.2",
     "pg": "^8.7.1",
     "request": "^2.88.2",
-    "request-promise": "^4.2.6"
+    "request-promise": "^4.2.6",
+    "tailwindcss": "^3.1.8"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.3"

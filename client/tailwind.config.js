@@ -10,7 +10,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'header-pattern': "url('assets/red_nebula.png')",
-        'theros-green': "transparent linear-gradient(261deg, #2B8472 0%, #0F977C 100%) 0% 0% no-repeat padding-box"
+        'theros-green': "transparent linear-gradient(261deg, #2B8472 0%, #0F977C 100%) 0% 0% no-repeat padding-box",
+        'theros-gods': "url('assets/gods_of_theros.jpg')"
       },
       colors: {
         'theros-start': '#2B8472',

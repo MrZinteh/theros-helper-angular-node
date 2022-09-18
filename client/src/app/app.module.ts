@@ -13,6 +13,7 @@ import {ImportantNpcsModule} from "./important-npcs/important-npcs.module";
 import {GodsModule} from "./gods/gods.module";
 import { AppRoutingModule } from './app-routing.module';
 import {NamesModule} from "./names/names.module";
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,15 @@ import {NamesModule} from "./names/names.module";
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
+    AppRoutingModule,
     FormsModule,
     SharedModule,
     PlayersModule,
     ImportantNpcsModule,
     GodsModule,
     AppRoutingModule,
-    NamesModule
+    NamesModule,
+    LoginModule
   ],
   providers: [
     BackendService,

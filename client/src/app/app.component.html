@@ -1,12 +1,14 @@
 <body class="h-full overflow-hidden">
     <app-login *ngIf="!isLoggedIn"></app-login>
-    <header>
-      <app-header></app-header>
-    </header>
-    <section>
-      <app-navbar></app-navbar>
-    </section>
-    <section>
-      <router-outlet></router-outlet>
-    </section>
+    <div *ngIf="isLoggedIn">
+      <header>
+        <app-header></app-header>
+      </header>
+      <section>
+        <app-navbar></app-navbar>
+      </section>
+      <section>
+        <router-outlet></router-outlet>
+      </section>
+    </div>
 </body>

@@ -25,7 +25,7 @@ export class LoginComponent {
 
   onSubmit(): void {
     if (this.loginForm.valid) {
-      this.authService.login(this.username!.value, this.password!.value).subscribe({
+      this.authService.login(this.username!.value!, this.password!.value!).subscribe({
         complete: () =>  {
           this.router.navigate(['NameGenerator']);
         }

@@ -16,6 +16,7 @@ export class ImportantNpcsComponent implements OnInit {
     "Awful Abner Abernathy": false,
     "Grandpaw Gerold The Gruesome": false,
     "Uncle Zadok": false,
+    "Oracle Of The All-Seeing Eye": false
   }
 
   constructor() { }

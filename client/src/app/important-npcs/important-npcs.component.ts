@@ -13,6 +13,9 @@ export class ImportantNpcsComponent implements OnInit {
     "Brutus": false,
     "Brimaz": false,
     "Berthazu": false,
+    "Awful Abner Abernathy": false,
+    "Grandpaw Gerold The Gruesome": false,
+    "Uncle Zadok": false,
   }
 
   constructor() { }

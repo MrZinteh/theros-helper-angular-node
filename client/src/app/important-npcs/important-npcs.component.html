@@ -95,4 +95,52 @@
       </div>
     </div>
   </div>
+  <div class="flex flex-row flex-wrap m-4 transition-[max-height] transform duration-1000" [ngClass]="expanded['Awful Abner Abernathy'] ? 'max-h-[34.125em]' : 'max-h-[28.125em]'">
+    <div class="rounded shadow-md hover:shadow-lg mb-10" (click)="onExpand('Awful Abner Abernathy')">
+      <img src="assets/awful_abner.png" alt="Awful Abner Abernathy" class="min-w-[300px] max-w-[300px] max-h-[300px] min-h-[300px] rounded">
+      <div class="max-w-[300px] px-4 py-1">
+        <h4 class="my-3"><b>Awful Abner Abernathy</b></h4>
+        <p class="my-1">Oracle of the All-Seeing Eye</p>
+      </div>
+      <div class="block overflow-hidden transition-[max-height] max-w-[252px] transform duration-1000 mx-4 mb-3" [ngClass]="expanded['Awful Abner Abernathy'] ? 'max-h-[6em]' : 'max-h-0'">
+        <ul class="list-disc">
+          <li>Coven Advisor</li>
+          <li>Known to be increadibly petty and will harrass people for unknown reasons</li>
+          <li>Hates the lack of subtlety of Uncle Zadok</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-row flex-wrap m-4 transition-[max-height] transform duration-1000" [ngClass]="expanded['Grandpaw Gerold The Gruesome'] ? 'max-h-[34.125em]' : 'max-h-[28.125em]'">
+    <div class="rounded shadow-md hover:shadow-lg mb-10" (click)="onExpand('Grandpaw Gerold The Gruesome')">
+      <img src="assets/grandpaw_gerold.png" alt="Grandpaw Gerold The Gruesome" class="min-w-[300px] max-w-[300px] max-h-[300px] min-h-[300px] rounded">
+      <div class="max-w-[300px] px-4 py-1">
+        <h4 class="my-3"><b>Grandpaw Gerold The Gruesome</b></h4>
+        <p class="my-1">Oracle of the All-Seeing Eye</p>
+      </div>
+      <div class="block overflow-hidden transition-[max-height] max-w-[252px] transform duration-1000 mx-4 mb-3" [ngClass]="expanded['Grandpaw Gerold The Gruesome'] ? 'max-h-[6em]' : 'max-h-0'">
+        <ul class="list-disc">
+          <li>Coven Leader / Night Hag</li>
+          <li>Inspires fear through mystery and won't show up until absolutely necessary</li>
+          <li>Holds control of the All-Seeing Eye and hates Awful Abner</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-row flex-wrap m-4 transition-[max-height] transform duration-1000" [ngClass]="expanded['Uncle Zadok'] ? 'max-h-[34.125em]' : 'max-h-[28.125em]'">
+    <div class="rounded shadow-md hover:shadow-lg mb-10" (click)="onExpand('Uncle Zadok')">
+      <img src="assets/uncle_zadok.PNG" alt="Uncle Zadok" class="min-w-[300px] max-w-[300px] max-h-[300px] min-h-[300px] rounded">
+      <div class="max-w-[300px] px-4 py-1">
+        <h4 class="my-3"><b>Uncle Zadok</b></h4>
+        <p class="my-1">Oracle of the All-Seeing Eye</p>
+      </div>
+      <div class="block overflow-hidden transition-[max-height] max-w-[252px] transform duration-1000 mx-4 mb-3" [ngClass]="expanded['Uncle Zadok'] ? 'max-h-[6em]' : 'max-h-0'">
+        <ul class="list-disc">
+          <li>Coven Brute / Annis Hag</li>
+          <li>Known for punishing unruly children by beating their loved ones</li>
+          <li>Resents Grandpaw Gerold</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>

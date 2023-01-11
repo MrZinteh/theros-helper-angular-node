@@ -8,8 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './shared/auth.guard';
 
 const routes: Routes = [
-  { path: '', component: NamesComponent },
-  { path: 'NameGenerator', component: NamesComponent, canActivate: [AuthGuard] },
+  { path: '', component: PlayersComponent },
   { path: 'Gods', loadChildren: () => import('./gods/gods-routing.module').then(m => m.GodsRoutingModule), canActivate: [AuthGuard] },
   { path: 'ImportantNPCs', component: ImportantNpcsComponent, canActivate: [AuthGuard] },
   { path: 'Players', component: PlayersComponent, canActivate: [AuthGuard] },
